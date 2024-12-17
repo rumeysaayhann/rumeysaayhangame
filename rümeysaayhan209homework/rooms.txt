@@ -1,0 +1,17 @@
+3
+You are in a small, dimly lit room.
+-1 -1 -1 1
+1
+Sword
+0
+
+You are in a corridor leading somewhere darker.
+-1 -1 0 2
+0
+-1
+
+You are in a large hall.
+-1 -1 1 -1
+1
+Shield
+0

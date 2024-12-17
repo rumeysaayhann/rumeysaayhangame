@@ -1,0 +1,2 @@
+# In a more detailed game, you'd have item definitions here.
+# For now, just an empty file or a placeholder.

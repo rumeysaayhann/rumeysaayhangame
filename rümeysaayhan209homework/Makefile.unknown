@@ -1,0 +1,24 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -g
+OBJDIR = output
+
+
+SRC = main.c game.c player.c rooms.c creatures.c items.c commands.c
+
+OBJ = $(OBJDIR)/main.o $(OBJDIR)/game.o $(OBJDIR)/player.o $(OBJDIR)/rooms.o $(OBJDIR)/creatures.o $(OBJDIR)/items.o $(OBJDIR)/commands.o
+
+
+EXEC = dungeon_game
+
+all: $(EXEC)
+
+$(EXEC): $(OBJ)
+	$(CC) $(CFLAGS) -o $(EXEC) $(OBJ)
+
+
+$(OBJDIR)/%.o: %.c
+	@mkdir -p $(OBJDIR)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -rf $(OBJDIR) $(EXEC)
